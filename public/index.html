@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<section>
+		<div id="tagUsers">
+			<h1> Users: <span id="users"> 0 </span> </h1>
+		</div>
+	</section>
+
+	<section id="over">
+		<div id="warning">
+			<h1> Welcome to Chat</h1>
+			<p> This application is a group chat. You need to enter a username to continue: </p>
+			<input type="text" id="username" placeholder="Username" maxlength="12">
+			<button id="join"> Join </button>
+		</div>
+	</section>
+
+	<section class="Chat">
+		<div class="Top">
+			<h1> Group Chat </h1>
+		</div>
+
+		<div class="Mid">
+			<div id="messages">
+				
+			</div>
+
+		</div>
+
+		<div class="Bot">
+			<input type="text" placeholder="Message" id="boxMessage">
+			<button id="btnSend"> Send </button>
+		</div>
+
+	</section>
+
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
